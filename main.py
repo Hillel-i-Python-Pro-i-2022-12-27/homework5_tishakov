@@ -5,6 +5,7 @@ from faker import Faker
 from applications.PATH.path import FILES_INPUT_FILES
 from reader import Reader
 
+
 def read_text():
     data = FILES_INPUT_FILES
     with open(data) as a:
@@ -13,6 +14,8 @@ def read_text():
 
 
 fake = Faker(["en_US"])
+
+
 def generator_email():
     data = []
     for _ in range(0, 100):
@@ -28,6 +31,7 @@ def get_info():
     for i in answer["people"]:
         print(i["name"])
 
+
 def csv_reader():
     text = "people.csv"
     with Reader.readFromFile(open(text, newline="")) as file:
@@ -39,11 +43,14 @@ def csv_reader():
     #     print("Headers: ", haeders)
     #     for row in reader:
     #         print(row)
+
+
 def main():
     print("\tзадание 1 чтенние файла по пути\n", read_text())
     print("\tзадание 2 сгенерировать 100 мэйлов\n", generator_email())
     print("\tзадание 3 вывести космонавтов\n", get_info())
     print(csv_reader())
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     main()
