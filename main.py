@@ -2,7 +2,7 @@ import requests
 import json
 
 from faker import Faker
-from applications.PATH.path import FILES_INPUT_FILES
+from application.PATH.path import FILES_INPUT_FILES
 from reader import Reader
 
 
