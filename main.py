@@ -1,16 +1,12 @@
 import requests
 import json
 
+
 from faker import Faker
-from application.PATH.path import FILES_INPUT_FILES
 from reader import Reader
 
-
-def read_text():
-    data = FILES_INPUT_FILES
-    with open(data) as a:
-        reading = a.read()
-    return reading
+# from application.config.paths import FILES_INPUT_FILES
+from application.config.paths import FILES_INPUT_FILES_CSV
 
 
 fake = Faker(["en_US"])
@@ -33,22 +29,19 @@ def get_info():
 
 
 def csv_reader():
-    text = "people.csv"
+    text = FILES_INPUT_FILES_CSV
+    # with Reader.readFromFile(open(text, newline="")) as file:
+    #     for line in file:
+    #         print(line)
     with Reader.readFromFile(open(text, newline="")) as file:
         for line in file:
             print(line)
-    # with Reader.openWithName(text) as file:
-    #     reader = csv.Reader()
-    #     haeders = next[reader]
-    #     print("Headers: ", haeders)
-    #     for row in reader:
-    #         print(row)
 
 
 def main():
-    print("\tзадание 1 чтенние файла по пути\n", read_text())
-    print("\tзадание 2 сгенерировать 100 мэйлов\n", generator_email())
-    print("\tзадание 3 вывести космонавтов\n", get_info())
+    # print("\tзадание 1 чтенние файла по пути\n", read_text())
+    # print("\tзадание 2 сгенерировать 100 мэйлов\n", generator_email())
+    # print("\tзадание 3 вывести космонавтов\n", get_info())
     print(csv_reader())
 
 
