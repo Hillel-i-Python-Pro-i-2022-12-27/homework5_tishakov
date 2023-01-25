@@ -7,4 +7,4 @@ FILES_INPUT_FILES: Final[Path] = ROOT_PATH.joinpath("files_input", "text.txt")
 FILES_INPUT_FILES_CSV: Final[Path] = ROOT_PATH.joinpath("files_input", "people.csv")
 FILES_OUTPUT_FILES: Final[Path] = ROOT_PATH.joinpath("output_input")
 
-print(FILES_INPUT_FILES)
+print(ROOT_PATH)

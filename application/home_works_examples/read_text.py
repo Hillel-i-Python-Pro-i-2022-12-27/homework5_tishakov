@@ -1,4 +1,4 @@
-from application.config import FILES_INPUT_FILES
+from application.config.paths import FILES_INPUT_FILES
 
 
 def read_text():
@@ -6,6 +6,3 @@ def read_text():
     with open(data) as a:
         reading = a.read()
     return reading
-
-
-print(read_text())
