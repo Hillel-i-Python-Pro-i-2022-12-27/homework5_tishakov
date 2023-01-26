@@ -6,14 +6,6 @@ from application.home_works_examples.generator_email import generator_email
 from application.home_works_examples.astronaut_len import austronaut_len
 
 
-# def get_info():
-#     response = requests.get("http://api.open-notify.org/astros.json")
-#     with open("info", "w") as file:
-#         file.write(response.text)
-#     answer = json.loads(response.text)
-#     for i in answer["people"]:
-#         print(i["name"])
-#
 #
 # def csv_reader():
 #     text = FILES_INPUT_FILES_CSV
