@@ -18,6 +18,3 @@ def austronaut_len():
         for i in data["people"]:
             answer.append(i["name"])
         return answer
-
-
-print(austronaut_len())
