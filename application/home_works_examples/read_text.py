@@ -1,8 +1,8 @@
-from application.config.paths import FILES_INPUT_FILES
+from application.config.paths import FILES_INPUT
 
 
 def read_text():
-    data = FILES_INPUT_FILES
+    data = FILES_INPUT
     with open(data) as a:
         reading = a.read()
     return reading
