@@ -1,2 +1,9 @@
-.idea/
+__pycache__/
 .venv/
+.venv
+.idea
+.idea/
+
+!files_input/.gitkeep
+
+!files_output/.gitkeep
